@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
+I am a programmer that reads [xkcd](https://xkcd.com).
+I use Vim!
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
+I do Python and C.
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[swlittle7@gmail.com](mailto:swlittle7@gmail.com)
