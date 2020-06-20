@@ -1,0 +1,130 @@
+# Hello, World! 🖖
+
+ I take the side of C, as defined in *The C programming language, second edition* by Brain Kerninghan and Dennis Ritchie.
+
+Now:
+
+# Let the games begin!
+
+## Chapter 1, part 1:
+
+### Hello World
+
+The only real way to learn a language is to start programming in it.
+
+So, we will do `Hello world`.
+
+#### Code
+
+Please make a new [C](https://repl.it/languages/c) repl, and enter this code into it.
+
+(No Copy-Paste)
+
+```c
+#include <stdio.h>
+
+int main() 
+{
+    printf("Hello world\n");
+    return 0;
+}
+```
+
+#### Run
+
+If you are in repl, press C-ret, or 'Run'
+
+If you are on a *NIX system use this:
+
+```gcc hello.c -Wall -Werror -o main.o && chmod +x main.o && ./main.o```
+
+If you are on Windows, download 50G of IDE and C++/Python/NET compilers (VS) and make a new project and hope your computer won't crash.
+
+#### Output
+
+You should see this appear in your terminal:
+```
+$ gcc hello.c -Wall -Werror -o main.o && chmod +x main.o && ./main.o
+$ ./main.o
+Hello world
+$ 
+```
+
+## Chapter 1, part 2
+
+### Meta time
+
+This section is very `meta` about C, and is not *Strictly* required.
+
+***Every*** C program has two parts:
+- Functions
+- Variables
+
+Or, to be even more meta:
+
+- Code
+- Data
+
+Let's dissect hello.c, line for line:
+
+`#include <stdio.h>`
+
+This may look like elvish, but it is very simple.
+
+The `#` char indicates a `preprocesser` directive. 
+
+The directive in question ~~The prime one~~ `include`, includes other code in your program.
+
+The prefix `std` means `standard`, and `io` means input/ouput
+
+`int main()`
+
+This is a `function`, or a snippet of code.
+
+Every function has the form `return_type name(args)`
+
+In this one, we have a return type of `int`, named `main` that takes no arguments
+
+`{`
+
+In C, a curly brace (`{/}`) seperates blocks of code.
+In this case, all you need to know is that all code between `{` and `}` is part of main
+
+`printf("Hello world");`
+
+This is another function, like main.
+
+It is named `printf`. In non-programmer speak, it means print with formatting. The formatting part is in Chapter two. It takes one -or two- arguments, the string to print, ~~and the format string~~.
+
+***All lines that don't start with a `#` or are a function end with `;`. No exceptions. Ever.***
+
+In this case, we are asking it to print `Hello world` with no formmatting.
+
+`return 0;`
+
+This is a special statment, `return`. It returns a piece of Data, like a gift.
+For `main`, the return value is normally used to tell if the program failed, or worked.
+
+- 0: It worked
+- 1: General error
+- 2+: Random error
+
+And, last but not least:
+
+`}`
+
+This tells your computer that your are done with `main` and want to move on.
+
+## Chapter 1, part 3
+### Your challenge
+
+You need to make a program that prints out three things:
+
+- Your favorite Browser (Firefox)
+- The operating system you don't like the most (Windows 10)
+- Your favorite type of pet (Dog)
+
+Please give them to me in the comments
+
+
+I will link to [Chapter Two](https://youtu.be/ub82Xb1C8os) when it comes out
