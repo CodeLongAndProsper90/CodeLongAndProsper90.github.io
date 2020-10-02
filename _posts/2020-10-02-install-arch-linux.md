@@ -241,6 +241,7 @@ Now run `sudo visudo` and find the line that starts with %sudo and uncomment it.
 
 ![visudo](https://i.imgur.com/yznl85H.png)
 
+After that, remove the symlink: `rm /usr/bin/vi`
 Save and quit, then create the sudo group and add your user:
 ```
 groupadd sudo
